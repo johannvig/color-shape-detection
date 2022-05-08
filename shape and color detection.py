@@ -4,7 +4,7 @@ import numpy as np
 
 
 
-def couleur(font = cv2.FONT_HERSHEY_COMPLEX):
+def couleur_shape(font = cv2.FONT_HERSHEY_COMPLEX):
 
 
     # Capturing webcam footage
@@ -145,4 +145,4 @@ def couleur(font = cv2.FONT_HERSHEY_COMPLEX):
 
 
 
-couleur()
+couleur_shape()
