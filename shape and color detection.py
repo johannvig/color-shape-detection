@@ -1,11 +1,12 @@
 
 import cv2
 import numpy as np
-
+import pyttsx3
 
 
 def couleur_shape(font = cv2.FONT_HERSHEY_COMPLEX):
-
+    
+    
 
     # Capturing webcam footage
     cap = cv2.VideoCapture(0)
