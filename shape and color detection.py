@@ -6,6 +6,30 @@ import pyttsx3
 
 def couleur_shape(font = cv2.FONT_HERSHEY_COMPLEX):
     
+    # Initialize the engine
+    engine = pyttsx3.init()
+
+    # Set properties before adding
+    # Things to say
+
+    # Use female voice
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id)
+
+    # Sets speed percent
+    # Can be more than 100
+    engine.setProperty('rate', 120)
+
+    # Set volume 0-1
+    engine.setProperty('volume', 0.9)
+    
+    # say method on the engine that passing input text to be spoken
+    engine.say("Please show your object to the camera in the middle of the screen to detect the color and the shape")
+    
+    # run and wait method, it processes the voice commands
+    engine.runAndWait()
+    engine.stop()
+    
     
 
     # Capturing webcam footage
